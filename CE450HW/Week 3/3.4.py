@@ -20,6 +20,7 @@ def intscts(f, x):
     else:
         return True
 
+
 at_three = intscts(square, 3)
 at_three(triple)
 
