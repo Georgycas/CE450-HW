@@ -1,7 +1,20 @@
+def is_Prime(n):
+    if n % 2 == 0:
+        return False
+    for i in range(3, int(n ** 0.5 + 1), 2):
+        if n % i == 0:
+            return False
+    return True
+
+
 def cnt_primes(m):
-    if is_prime(m):
-        return 1 + cnt_primes(m - 1)
-    else:
-        return cnt_primes(m - 1)
+    i = 0
+    cntprime = 0
+    while i < m:
+        if is_Prime(i):
+            cntprime = cntprime + 1
+        i += 1
+    return cntprime
+
 
 print(cnt_primes(6))

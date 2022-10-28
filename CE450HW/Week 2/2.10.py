@@ -1,17 +1,16 @@
 def bnc_bck_frth(k):
     A = []
-    j = 1
-    flag = 1
-    for i in range(1, 101):
-        if i % 7 == 0 or '7' in str(i):
-            flag = flag * -1
-        if flag == 1:
-            A.append(j)
-            j += 1
+    B = 1
+    trace = 1
+    for I in range(1, 101):
+        if I % 7 == 0 or '7' in str(I):
+            trace = trace * -1
+        if trace == 1:
+            A.append(B)
+            B += 1
         else:
-            A.append(j)
-            j -= 1
-
+            A.append(B)
+            B -= 1
     return A[k - 1]
 
 

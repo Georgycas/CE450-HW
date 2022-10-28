@@ -4,6 +4,5 @@ def sum_num(n):
     return n + sum_num(n - 2)
 
 
-print(sum_n(4))
-
-print(sum_n(5))
+print(sum_num(4))
+print(sum_num(5))

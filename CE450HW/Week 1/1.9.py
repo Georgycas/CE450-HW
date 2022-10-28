@@ -6,7 +6,7 @@ def uniq_digits(x):
     for lst in uniqnumbers:
         lstuniqnumbers.append(lst)
 
-    print(lstuniqnumbers)
+    print(len(lstuniqnumbers))
 
 
 uniq_digits(8675309)

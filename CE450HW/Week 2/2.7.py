@@ -5,5 +5,4 @@ def cal(n):
 
 
 print(cal(5))
-
 print(cal(8))

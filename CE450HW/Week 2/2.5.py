@@ -3,7 +3,7 @@ def op(a, b, c):
         return c
     if a - 1 == 0:
         return b + c
-    return b + op(a - 1, b, c)
+    return a + op(a, b - 1, c)
 
 
 print(op(2, 4, 3))
