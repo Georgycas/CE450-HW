@@ -1,15 +1,16 @@
 # Ask the professor this weird input
-def incr(x):
-    return x + 1
+def add(a, b):
+    return a + b
 
 
-def foo(f):
-    func = str(f)
-    if func == "incr":
-        return incr()
+def foo(f, n):
+    def g(m):
+        return f(n, m)
+
+    return g
 
 
-foo(incr, 2)(1)
+foo(add, 2)(1)
 """add3 = foo(incr, 5)
 add3(3)
 foo(triple, 5)(1)
