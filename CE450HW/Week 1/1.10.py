@@ -1,31 +1,31 @@
-def sumOfDiv(x):
+def sumDiv(x):
     sum = 1
     for i in range(2, x):
         if x % i == 0:
-            sum += i
+            sum = sum + i
     return sum
 
 
-def isAmicable(a, b):
-    if sumOfDiv(a) == b and sumOfDiv(b) == a:
+def isAmc(a, b):
+    if sumDiv(a) == b and sumDiv(b) == a:
         return True
     else:
         return False
 
 
 def amc(n):
-    i = n + 1
-    while i < 10000:
-        j = 0
-        while j < 10000:
-            if isAmicable(i, j):
-                return i
-            j += 1
-        i += 1
+    Num = n + 1
+    while Num < 6000:
+        count = 0
+        while count < 6000:
+            if isAmc(Num, count):
+                return Num
+            count = count + 1
+        Num = Num + 1
 
 
-print(amc(5))
+print(amc(142))
 print(amc(220))
 print(amc(284))
-r = amc(5000)
+r = amc(1184)
 print(r)
