@@ -1,20 +1,25 @@
 def mrg(ls1, ls2):
     ls1 = ls1 + ls2
-    sort_ls = []
-    r = 0
-    def rec(r):
-        if len(ls1) == len(sort_ls):
-            return sort_ls
+
+    def rec(r=0):
+        if r == len(ls1):
+            return True
         else:
             def rec_sort(i=0):
-                if r == i:
-                    return sort_ls
+                if i == len(ls1):
+                    return
                 else:
                     if ls1[r] < ls1[i]:
-                        sort_ls.append(i)
-                rec_sort(i + 1)
+                        ls1[r], ls1[i] = ls1[i], ls1[r]
+                    # code here
+                    rec_sort(i + 1)
+
+            rec_sort()
+            # code here
         rec(r + 1)
-    rec()
+
+    rec()  # start
+    return ls1
 
 
 print(mrg([1, 3, 5], [2, 4, 6]))
