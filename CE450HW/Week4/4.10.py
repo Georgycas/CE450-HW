@@ -1,7 +1,9 @@
-def   crte_2d_arr(rows, columns):
+def crte_2d_arr(rows, columns):
+    x=[]
+
+    
     """
     >>> crte_2d_arr(3, 5)
     [['-', '-', '-', '-', '-'], ['-', '-', '-', '-', '-'], ['-', '-', '-', '-', '-']]
 
     """
-
