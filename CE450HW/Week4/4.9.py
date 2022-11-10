@@ -1,4 +1,8 @@
-def fld (lst, g, m):
+from operator import add,sub,mul
+
+print(sub(1,2))
+
+
 """Return the result of applying the function g to the initial value m     and the first element in lst, and repeatedly applying g to this result and the next element in lst until it reaches the end of the list.
 
     >>> s = [3, 2, 1]
