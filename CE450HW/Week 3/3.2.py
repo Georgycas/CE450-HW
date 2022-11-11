@@ -10,7 +10,7 @@ def adder(f1, f2):
     return f1 + f2
 
 
-n = int(input("Type in the one integer"))
+n = int(input("Type in the one integer: "))
 a1 = adder(identity(n), square(n))
 print(a1)
 a2 = adder(a1, identity(n))
