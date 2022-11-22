@@ -2,14 +2,14 @@ from math import sqrt
 
 
 def is_sqrt(seq):
-    prfctsqrt = []
+    end = []
     for i in range(len(seq)):
         sq_root = int(sqrt(seq[i]))
         check = seq[i]
         if (sq_root * sq_root) == check:
-            prfctsqrt = seq[i] + prfctsqrt
+            end.append(check)
 
-    return prfctsqrt
+    return end
 
 
 seq = [49, 8, 2, 1, 102]
