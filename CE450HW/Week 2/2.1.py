@@ -2,11 +2,15 @@ def fancy_printing(n):
     def rep(x):
         b = 0
         while x > b:
-            if b % n == 0:
+            if b == 0:
+                print(b)
+                b = b + 1
+            elif n % b == 0:
                 print("Buzz!")
                 b = b + 1
-            print(b)
-            b = b + 1
+            else:
+                print(b)
+                b = b + 1
 
     return rep
 

@@ -5,7 +5,7 @@ def sum_odd(x):
     while i > sum:
         count = count + 2
         sum = sum + count
-    print("The sum of all odd number less than",x,"is",sum)
+    print("The sum of all odd number less than", x, "is", sum)
 
 
 def start():

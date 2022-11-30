@@ -22,7 +22,7 @@ def foo(f, n=1):
     return g
 
 
-print(foo(incr, 9)(8))
+print(incr(5))
 add3 = foo(incr, 5)
 print(add3(3))
 print(foo(triple, 5)(1))
