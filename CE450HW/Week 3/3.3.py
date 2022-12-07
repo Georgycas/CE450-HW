@@ -13,6 +13,6 @@ def combine_funcs(op):
 
 add_func = combine_funcs(add)
 
-h = add_func(abs, neg)
+h = combine_funcs(abs, neg)
 
 print(h(-5))
